@@ -1,36 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NullFrame | Strategic Analysis Hub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NullFrame Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #0d0d0d;
-      color: #e6e6e6;
-      font-family: "Courier New", monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      color: #e0e0e0;
+      font-family: 'Inter', sans-serif;
       margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-    h1 { font-size: 2em; letter-spacing: 2px; }
-    p { font-size: 1.1em; opacity: 0.8; }
+
+    .container {
+      max-width: 700px;
+      padding: 2em;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #00ff88;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      color: #cccccc;
+    }
+
+    .tagline {
+      font-size: 1.1em;
+      color: #999;
+      margin-bottom: 2em;
+    }
+
+    .report-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin-bottom: 1.5em;
+      transition: all 0.3s ease;
+    }
+
+    .report-card:hover {
+      border-color: #00ff88;
+      background-color: #121212;
+    }
+
+    .report-card h3 {
+      margin-top: 0;
+      color: #00ff88;
+    }
+
+    .report-card p {
+      margin: 0.5em 0 1em;
+      color: #ccc;
+    }
+
+    .report-card a {
+      color: #00ff88;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .report-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>NullFrame Online</h1>
-  <p>Strategic Analysis • OSINT • Reality Mapping</p>
-  <h2>Reports</h2>
-<ul>
-  <li><li>
-  <a href="/pdf/from-gold-to-code-v1.pdf">From Gold to Code – Open full report (PDF)</a>
-</li>
+  <div class="container">
+    <h1>NullFrame Online</h1>
+    <p class="tagline">Strategic Analysis • OSINT • Reality Mapping</p>
 
-</li>
-</ul>
+    <h2>Reports</h2>
 
+    <div class="report-card">
+      <h3>From Gold to Code</h3>
+      <p>CBDCs explained with zero fluff. Instant settlement. Zero privacy. Risk included.</p>
+      <a href="/pdf/from-gold-to-code-v1.pdf" target="_blank">Open full report (PDF)</a>
+    </div>
+
+    <footer>
+      © null0frame — calibrated for hostile environments
+    </footer>
+  </div>
 </body>
 </html>
